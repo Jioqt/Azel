@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <img src="1301536.jpg" style="width:1900px;height:700px;">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Halaman Web Kompleks</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(71, 93, 112);
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+header {
+    background-color:#000000;
+    color: #ffffff;
+    padding: 20px 0;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.section {
+    padding: 50px 0;
+    text-align: center;
+}
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+form input, form textarea {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ffffff;
+}
+form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Halaman Web game tekken</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#services">Layanan</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="section">
+        <div class="container">
+            <h2>Selamat Datang Di zellWeb</h2>
+            <p>tekken</p>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Tentang Game tekken</h2>
+            <p align="justify">Tekken (鉄拳, "kepalan besi") adalah sebuah seri permainan pertarungan yang dikembangkan dan diproduksi oleh Namco. Berawal dari sebuah permainan 
+                arkade, dan kemudian biasanya diport ke konsol konsol permainan PlayStation (kecuali handheld PlayStation Vita hanya via backward kompatible ke game yang keluar di 
+                PlayStation Portable). Setelah Tekken 5, game port Tekken di konsol besar yang kedepan telah mulai juga diport ke konsol besar lainnya selain di seri konsol PlayStation, 
+                biasanya di seri konsol Xbox (pertama di Xbox 360) sejak Tekken 6, dan Microsoft Windows PC sejak Tekken 7.
+
+                Seri Tekken adalah salah satu permainan terawal yang menggunakan sistem 3D, dengan seri pertama dilepas dua tahun setelah Virtua Fighter. Ada tujuh sekuel canon utama game
+                 seri Tekken, yaitu Tekken 2, Tekken 3, Tekken 4, Tekken 5, Tekken 6, Tekken 7, dan Tekken 8. Walaupun Tekken 5 punya title update rilis yang terpisah dari rilis original, 
+                 konsol rilis Tekken 6, Tekken Tag Tournament 2 dan Tekken 7 berbasis dengan title update port arkade, dan hanya arkade Tekken 7 yang mendapatkan konten yang pertama hadir 
+                 ke versi konsol setelah port sistem tersebut dirilis. Hanya Tekken 8 yang sampai sekarang tidak mempunyai versi arkade sendiri.
+            </p>
+
+            <p><h2>Cerita Dari Tekken</h2></p>
+            <p align="justify">Tekken ( Jepang :鉄拳てつけん, yang berarti "Iron Fist") adalah waralaba media Jepang yang berpusat pada serangkaian game pertarungan yang dikembangkan
+                dan diterbitkan oleh Bandai Namco Entertainment (sebelumnya Namco ). Waralaba ini juga mencakup adaptasi film dan cetak.
+                Permainan utama dalam seri ini mengikuti acara Turnamen Raja Tinju Besi
+                 yang diselenggarakan oleh Mishima Zaibatsu ,di mana pemain mengontrol sejumlah besar karakter untuk memenangkan turnamen dan mendapatkan kendali atas perusahaan;
+                 konflik antara keluarga Mishima menjadi fokus utama plot seri ini, sementara pemain mengeksplorasi motivasi karakter lain untuk mengendalikan Zaibatsu .
+                Gameplay berfokus pada pertarungan tangan kosong dengan lawan, dengan sistem gameplay termasuk blok, lemparan, pelarian, dan pertarungan darat.
+                 Serial ini kemudian memperkenalkan kombo dan gerakan khusus, dengan karakter yang juga mampu melakukan stage break arena. 
+                 Tekken tercatat sebagai salah satu game pertarungan pertama yang menggunakan animasi 3D.
+            </p>
+
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h2>Layanan Kami</h2>
+            <ul>
+                <li>Layanan 1</li>
+                <li>Layanan 2</li>
+                <li>Layanan 3</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Hubungi Kami</h2>
+            <form id="contactForm">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" id="submitBtn">Kirim</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Halaman WEb Kompleks</p>
+            <img src="nAmO4Hf.jpg"> 
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            // Lakukan sesuatu dengan data formulir (misalnya, kirim ke server atau tampilkan pesan sukses)
+            console.log("Nama: " + name + ", Email: " + email + ", Pesan: " + message);
+
+            // Tombol kirim akan berubah menjadi "Mengirim..."
+            document.getElementById("submitBtn").innerText = "Mengirim...";
+
+            // Simulasi pengiriman data dengan setTimeout
+            setTimeout(function() {
+                // Lakukan sesuatu dengan data formulir (misalnya, kirim ke server atau tampilkan pesan sukses)
+                console.log("Nama: " + name + ", Email: " + email + ", Pesan: " + message);
+
+                // Setelah pengiriman data selesai, tombol kirim akan kembali menjadi "Kirim"
+                document.getElementById("submitBtn").innerText = "Kirim";
+
+                // Reset formulir
+                document.getElementById("contactForm").reset();
+            }, 2000); // Contoh pengiriman data dalam 2 detik
+        });
+    </script>
+</body>
+</html>
